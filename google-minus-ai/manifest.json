@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Google -ai",
+  "version": "2.0",
+  "description": "Adds -ai to every Google search.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+        "https://www.google.co.uk/search*",
+        "https://www.google.de/search*",
+        "https://www.google.ca/search*",
+        "https://www.google.fr/search*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
